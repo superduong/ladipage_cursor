@@ -146,9 +146,9 @@ export default function App() {
       <header className="site-header">
         <div className="container header-inner">
           <span className="logo">
-            Build<span className="logo-dot">.</span>vn
+          Xây app hiện đại cùng công nghệ AI tiên phong
           </span>
-          <a href="#dang-ky" className="btn btn-ghost">
+          <a href="#dang-ky" className="btn btn-ghost"x>
             Đăng ký tư vấn
           </a>
         </div>
@@ -162,13 +162,14 @@ export default function App() {
               Nhận làm dự án phần mềm — <em>chi phí cực kỳ ưu đãi</em>
             </h1>
             <p className="hero-lead">
-              Hiện tại mình có <strong>$50 credit từ Cursor</strong> (AI hỗ trợ code), nên muốn tận dụng để build
+              Hiện tại team mình được ưu tiên khi <strong>nhận được nhiều credit từ Cursor</strong> (AI hỗ trợ code top đầu thế giới), nên muốn tận dụng để build
               các dự án thực tế với chi phí cực kỳ ưu đãi cho mọi người.
             </p>
             <div className="hero-badges">
-              <span className="pill pill-accent">$50 Cursor credit</span>
-              <span className="pill">Ưu tiên MVP & startup sớm</span>
-              <span className="pill">Tư vấn miễn phí trước khi làm</span>
+              <span className="pill pill-accent">Trải nghiệm AI thông minh nhất</span>
+              <span className="pill pill-accent">Tư vấn miễn phí trước khi làm</span>
+              <span className="pil pill-accent">Ưu tiên MVP & startup sớm</span>
+              
             </div>
           </div>
         </section>
@@ -181,7 +182,7 @@ export default function App() {
             <ul className="card-grid">
               <li className="card">
                 <h3>Web app</h3>
-                <p>Django, FastAPI, React — full stack gọn, chuẩn production.</p>
+                <p>Full Stack gọn, chuẩn production.</p>
               </li>
               <li className="card">
                 <h3>Backend &amp; hệ thống</h3>
@@ -242,8 +243,8 @@ export default function App() {
             <p className="eyebrow">📩 Liên hệ</p>
             <h2 className="cta-title">Bạn đang có idea hoặc cần làm hệ thống?</h2>
             <p className="cta-text">
-              Inbox mình hoặc comment (nếu đăng trên mạng xã hội) — mình sẽ{" "}
-              <strong>tư vấn hướng làm + estimate</strong> luôn.
+              Vui lòng điền đầy đủ thông tin phía dưới — team mình sẽ{" "}
+              <strong>tư vấn chiến lược làm hiệu quả nhất</strong> luôn.
             </p>
             <p className="cta-priority">👉 Ưu tiên các dự án nhỏ / MVP / startup giai đoạn đầu.</p>
           </div>
@@ -252,9 +253,9 @@ export default function App() {
         <section className="section section-form" id="dang-ky">
           <div className="container form-wrap">
             <div className="form-intro">
-              <h2 className="section-title">Đăng ký nhận tư vấn</h2>
+              <h2 className="section-title">Đăng ký nhận tư vấn NGAY</h2>
               <p>
-                Điền form bên dưới — mình sẽ phản hồi với hướng làm &amp; estimate. Không spam, không chia sẻ thông
+                *Không spam, không chia sẻ thông
                 tin bên thứ ba.
               </p>
             </div>
@@ -359,7 +360,7 @@ export default function App() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <p>Cảm ơn mọi người 🙌</p>
-          <p className="footer-note"> Copyright 2026. All rights reserved.</p>
+          <p className="footer-note"> © All rights are reserved by AI Tech Solutions.</p>
         </div>
       </footer>
     </>
