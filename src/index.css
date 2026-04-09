@@ -83,9 +83,45 @@ body {
 
 .header-inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 0.75rem 1rem;
   padding: 1rem 0;
+}
+
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.header-hotline {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  padding: 0.35rem 0;
+}
+
+.header-hotline:hover .header-hotline-text {
+  color: var(--accent);
+}
+
+.header-hotline-text {
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.header-hotline-text strong {
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.header-hotline:hover .header-hotline-text strong {
+  color: var(--accent);
 }
 
 .logo {
@@ -197,6 +233,20 @@ body {
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.14), rgba(168, 85, 247, 0.1));
   color: #4338ca;
   font-weight: 600;
+}
+
+a.pill-hotline {
+  text-decoration: none;
+  color: #0f766e;
+  border-color: rgba(13, 148, 136, 0.35);
+  background: linear-gradient(135deg, rgba(204, 251, 241, 0.85), rgba(167, 243, 208, 0.35));
+  font-weight: 600;
+}
+
+a.pill-hotline:hover {
+  border-color: rgba(13, 148, 136, 0.55);
+  color: #0d9488;
+  transform: translateY(-1px);
 }
 
 /* Sections */
@@ -336,6 +386,42 @@ body {
   margin: 1.5rem 0 0;
   color: #c2410c;
   font-weight: 600;
+}
+
+.cta-hotline {
+  margin: 1.75rem 0 0;
+}
+
+.cta-hotline-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.75rem 1.35rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 999px;
+  border: 2px solid var(--border-glow);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(238, 242, 255, 0.9));
+  box-shadow: var(--shadow-soft);
+  transition: border-color var(--transition), transform 0.15s ease, box-shadow var(--transition), color var(--transition);
+}
+
+.cta-hotline-link strong {
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  background: linear-gradient(120deg, var(--accent), var(--accent-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cta-hotline-link:hover {
+  border-color: rgba(99, 102, 241, 0.45);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
 
 /* Form */

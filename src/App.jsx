@@ -36,6 +36,10 @@ function validateAll(values) {
 const FORM_OWNER_EMAIL = "vanduong15@gmail.com";
 const FORM_SUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${FORM_OWNER_EMAIL}`;
 
+const HOTLINE_NAME = "Mr.Nam";
+const HOTLINE_DISPLAY = "093 330 6170";
+const HOTLINE_HREF = "tel:+84933306170";
+
 /** FormSubmit trả về tiếng Anh; chuẩn hoá lỗi “chưa kích hoạt” cho người dùng cuối */
 function formatFormSubmitError(raw) {
   const msg = typeof raw === "string" ? raw : "";
@@ -145,12 +149,17 @@ export default function App() {
       <div className="noise" aria-hidden="true" />
       <header className="site-header">
         <div className="container header-inner">
-          <span className="logo">
-          Xây app hiện đại cùng công nghệ AI tiên phong
-          </span>
-          <a href="#dang-ky" className="btn btn-ghost"x>
-            Đăng ký tư vấn
-          </a>
+          <span className="logo">Xây app hiện đại cùng công nghệ AI tiên phong</span>
+          <div className="header-actions">
+            <a href={HOTLINE_HREF} className="header-hotline">
+              <span className="header-hotline-text">
+                Hotline {HOTLINE_NAME}: <strong>{HOTLINE_DISPLAY}</strong>
+              </span>
+            </a>
+            <a href="#dang-ky" className="btn btn-ghost">
+              Đăng ký tư vấn
+            </a>
+          </div>
         </div>
       </header>
 
@@ -168,8 +177,10 @@ export default function App() {
             <div className="hero-badges">
               <span className="pill pill-accent">Trải nghiệm AI thông minh nhất</span>
               <span className="pill pill-accent">Tư vấn miễn phí trước khi làm</span>
-              <span className="pil pill-accent">Ưu tiên MVP & startup sớm</span>
-              
+              <span className="pill pill-accent">Ưu tiên MVP & startup sớm</span>
+              <a href={HOTLINE_HREF} className="pill pill-hotline">
+                ☎ Hotline {HOTLINE_NAME}: {HOTLINE_DISPLAY}
+              </a>
             </div>
           </div>
         </section>
@@ -247,6 +258,11 @@ export default function App() {
               <strong>tư vấn chiến lược làm hiệu quả nhất</strong> luôn.
             </p>
             <p className="cta-priority">👉 Ưu tiên các dự án nhỏ / MVP / startup giai đoạn đầu.</p>
+            <p className="cta-hotline">
+              <a href={HOTLINE_HREF} className="cta-hotline-link">
+                Hotline {HOTLINE_NAME}: <strong>{HOTLINE_DISPLAY}</strong>
+              </a>
+            </p>
           </div>
         </section>
 
